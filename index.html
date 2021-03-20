@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Saiptne">
+	<meta name="author" content="St,Gr">
+
+	<title>呼喊供應室™</title>
+
+	<link rel="stylesheet" href="assets/css/assets.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700">
+</head>
+<body leftmargin=0 topmargin=0 oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()' style="overflow-y: hidden">
+	<div class="headline  text_center" style="margin-top:-3rem">		
+		<div class="gap_l"></div>
+		<div class="container">
+			<h6>一般咨詢 | General Inquires</h6>
+			<h1><a href="mailto:hello@saiptne.com" class="link">hello@saiptne.com</a></h1>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+			if (event.keyCode == 123) {
+			event.preventDefault();
+			window.event.returnValue = false;
+			}
+		}
+		
+		var threshold = 160;
+		var check = setInterval(function() {
+			if (window.outerWidth - window.innerWidth > threshold || 
+				window.outerHeight - window.innerHeight > threshold) {
+				window.location.reload();
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
